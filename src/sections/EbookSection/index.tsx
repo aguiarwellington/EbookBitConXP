@@ -202,7 +202,7 @@ const EbookSection = () => {
                 <Button
                   fullWidth
                   variant="contained"
-                  href="https://drive.google.com/SEU_LINK_EBOOK1"
+                  href="https://drive.google.com/uc?export=download&id=1nbpW9L0VjcYFEDlNniK47ENaGaTPFe25"
                   target="_blank"
                   sx={{
                     backgroundColor: '#00C851',
@@ -245,7 +245,7 @@ const EbookSection = () => {
                 <Button
                   fullWidth
                   variant="contained"
-                  href="https://drive.google.com/SEU_LINK_EBOOK2"
+                  href="https://drive.google.com/uc?export=download&id=12Ufc5e2Bq1xa4RX9L_RGcPv747lfpY24"
                   target="_blank"
                   sx={{
                     backgroundColor: '#00C851',
