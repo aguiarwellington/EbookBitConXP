@@ -8,6 +8,7 @@ import {
   useMediaQuery,
   useTheme,
 } from '@mui/material';
+import emailjs from '@emailjs/browser';
 
 const EbookSection = () => {
   const [formData, setFormData] = useState({
@@ -24,9 +25,25 @@ const EbookSection = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+
+    emailjs.send(
+      'service_z4ihs1v', // service ID
+      'template_en9asih', // template ID 
+      {
+        nome: formData.nome,
+        email: formData.email,
+        telefone: formData.telefone,
+      },
+      '5Oz-hq6HO8pd-KB_q' // public key
+    )
+    .then(() => {
+      setSubmitted(true);
+    })
+    .catch((error) => {
+      console.error('Erro ao enviar e-mail:', error);
+    });
   };
 
   return (
