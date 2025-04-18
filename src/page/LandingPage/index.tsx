@@ -8,7 +8,6 @@ const LandingPage = () => {
     <Box sx={{ overflowX: 'hidden' }}>
       <Navbar />
       <EbookSection />
-
     <Footer />
     </Box>
   );

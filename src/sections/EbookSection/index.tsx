@@ -36,7 +36,7 @@ const EbookSection = () => {
         email: formData.email,
         telefone: formData.telefone,
       },
-      '5Oz-hq6HO8pd-KB_q' // public key
+      '5Oz-hq6HO8pd-KB_q' 
     )
     .then(() => {
       setSubmitted(true);
